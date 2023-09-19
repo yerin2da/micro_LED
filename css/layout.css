@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* 레이아웃서식 header, main, footer 공통 서식*/
+body {position: relative;}
+/* 헤더, 푸터 서식 */
+
+
+/*html만으로 스무스하게 이동하는 방법*/
+/* html{
+    scroll-behavior: smooth;
+}    */
+
+/* 모달창 서식 */
+.modal{
+    position: fixed;
+    left: 0;top: 0;
+    width: 100%;height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+}
+.inner{/*가로세로 높이값 줘야함*/
+    width: 450px;
+    height: 640px;/*이미지600, 오늘하루 열지않음 40*/
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.inner img{/*이미지랑 흰색박스 사이의 간격을 없애기위해 전체 마진0, 패딩0, 이미지에 블럭 줘야함*/
+    display: block;
+    width: 100%;
+}
+.inner>p{
+    background: #fff;
+    line-height: 40px;
+    font-size:14px;
+    padding:0px 5px;
+}
+.inner #c_btn{
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    background: #fff;
+    position: absolute;
+    right: 10px;bottom: 44px;
+}
+
+
+/* 헤더 서식 */
+header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;/*젤 위로 올라와야해서*/
+    transition: 0.3s;
+}
+/* 세로스크롤 값이 1000px이상일 경우 header배경색 적용 */
+.act{
+    background: rgba(255, 255, 255, 0.7) !important;
+}
+
+header> h1{
+    padding: 0px 0px 0px 2%;
+}
+header img{
+    width: 180px;
+}
+
+header> nav{
+    position: absolute;
+    width: 600px;
+    margin-top: -45px;
+    right: 2%;
+}
+header .gnb{
+    display: flex;
+    justify-content: space-between;
+}
+header .gnb > li:hover{
+    font-weight: bold;
+}
+header .gnb > li > a{
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform:uppercase;
+}
+
+/* 고정 내비게이션 서식 */
+#m_nav{opacity: 0;
+    position: fixed;
+    top: 50%;transform: translateY(-50%);
+    left: 2%;
+    z-index: 999;
+    
+}
+#m_nav ul li{
+    width: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    height: 30px;text-align: center;
+    padding: 10px 5px 0px 5px;
+    border-radius: 10px;
+}
+#m_nav ul li:hover{
+    font-weight: bold;
+   
+}
+#m_nav a{
+    font-size: 18px;
+    color: #fff;
+}
+#m_nav .color_change{
+    transition: 0.5s;
+    width: 100%;
+    background: #fff;
+    transition-timing-function:cubic-bezier(0.25, 0.1, 0.25, 1 );
+}
+.color_change>a{
+    font-weight: bold;
+    color: #000 !important;
+}
+
+
+/* 푸터 서식 */
+footer{
+    padding: 10px 0px;
+    width: 100%;
+    background: #000;
+    
+}
+footer>.logo{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+}
+
+.logo img{
+    padding-top: 70px;
+    width: 120px;
+    order: 1;
+}
+.sns{
+    display: flex;
+    justify-content: space-between;
+    order: 3;
+    padding-right: 5%;
+}
+.sns>li{
+    width: 30px;
+    margin: 0px 5px;
+}
+.sns>li img{
+    padding-top: 70px;
+    width: 100%;
+}
+
+.addr{
+    padding: 10px 0px;
+    width: 1200px;
+    margin-left: 2%;
+    line-height: 30px;
+    background: black;
+    color: #fff;
+    text-align: left;
+    order: 2;
+    
+}
+.copy{
+    display: flex;
+    justify-content: space-between;
+}
+.f_nav{
+    display: flex;
+}
+.f_nav>li{
+   padding-left:10px;
+}
