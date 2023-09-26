@@ -163,15 +163,18 @@ footer>.logo{
     color: #fff;
     text-align: left;
     order: 2;
-    
 }
 .copy{
     display: flex;
     justify-content: space-between;
+    color: #fff;
 }
 .f_nav{
     display: flex;
 }
 .f_nav>li{
-   padding-left:10px;
+    padding-left:10px;
+}
+.f_nav>li>a{
+    color: #fff;
 }
