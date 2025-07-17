@@ -7,83 +7,83 @@ $(document).ready(function(){
     $(window).scroll(function(){
         // let sPos = $(this).scrollTop();
         let sPos = $(this).scrollTop();
-        
+
 
         console.log(sPos);
 
 
 
 
- //1번 내비
- if(sPos>625){
-    $('#m_nav').css('opacity','1');
-    $('#m_nav>ul>li:first-child').addClass('color_change');
- }else if(sPos>3246){
-    $('#m_nav>ul>li:first-child').addClass('color_change');
- }else{
-    $('#m_nav>ul>li:first-child').removeClass('color_change');
-    $('#m_nav').css('opacity','0');
+        //1번 내비
+        if(sPos>625){
+            $('#m_nav').css('opacity','1');
+            $('#m_nav>ul>li:first-child').addClass('color_change');
+        }else if(sPos>3246){
+            $('#m_nav>ul>li:first-child').addClass('color_change');
+        }else{
+            $('#m_nav>ul>li:first-child').removeClass('color_change');
+            $('#m_nav').css('opacity','0');
 
- }
+        }
 
 
 
 //2번 내비3247
-if(sPos>=3464){
-    $('#m_nav>ul>li:first-child').removeClass('color_change');
+        if(sPos>=3464){
+            $('#m_nav>ul>li:first-child').removeClass('color_change');
 
-    $('#m_nav>ul>li:nth-child(2)').addClass('color_change');
- }else if(sPos>=4229){
-    $('#m_nav>ul>li:first-child').removeClass('color_change');
+            $('#m_nav>ul>li:nth-child(2)').addClass('color_change');
+        }else if(sPos>=4229){
+            $('#m_nav>ul>li:first-child').removeClass('color_change');
 
-    $('#m_nav>ul>li:nth-child(2)').addClass('color_change');
- }else{
-    $('#m_nav>ul>li:nth-child(2)').removeClass('color_change');
+            $('#m_nav>ul>li:nth-child(2)').addClass('color_change');
+        }else{
+            $('#m_nav>ul>li:nth-child(2)').removeClass('color_change');
 
- }
+        }
 
 
- //3번 내비
- if(sPos>=4230){
-    $('#m_nav>ul>li:nth-child(2)').removeClass('color_change');
+        //3번 내비
+        if(sPos>=4230){
+            $('#m_nav>ul>li:nth-child(2)').removeClass('color_change');
 
-    $('#m_nav>ul>li:nth-child(3)').addClass('color_change');
- }else if(sPos>=5135){
-    $('#m_nav>ul>li:nth-child(2)').removeClass('color_change');
+            $('#m_nav>ul>li:nth-child(3)').addClass('color_change');
+        }else if(sPos>=5135){
+            $('#m_nav>ul>li:nth-child(2)').removeClass('color_change');
 
-    $('#m_nav>ul>li:nth-child(3)').addClass('color_change');
- }else{
-    $('#m_nav>ul>li:nth-child(3)').removeClass('color_change');
+            $('#m_nav>ul>li:nth-child(3)').addClass('color_change');
+        }else{
+            $('#m_nav>ul>li:nth-child(3)').removeClass('color_change');
 
- }
+        }
 
- //4번 내비
- if(sPos>=5136){
-    $('#m_nav>ul>li:nth-child(3)').removeClass('color_change');
+        //4번 내비
+        if(sPos>=5136){
+            $('#m_nav>ul>li:nth-child(3)').removeClass('color_change');
 
-    $('#m_nav>ul>li:nth-child(4)').addClass('color_change');
- }else if(sPos>=6161){
-    $('#m_nav>ul>li:nth-child(3)').removeClass('color_change');
+            $('#m_nav>ul>li:nth-child(4)').addClass('color_change');
+        }else if(sPos>=6161){
+            $('#m_nav>ul>li:nth-child(3)').removeClass('color_change');
 
-    $('#m_nav>ul>li:nth-child(4)').addClass('color_change');
- }else{
-    $('#m_nav>ul>li:nth-child(4)').removeClass('color_change');
+            $('#m_nav>ul>li:nth-child(4)').addClass('color_change');
+        }else{
+            $('#m_nav>ul>li:nth-child(4)').removeClass('color_change');
 
- }
+        }
 
- //마지막 내비
- if(sPos>6162){
-    $('#m_nav>ul>li:nth-child(4)').removeClass('color_change');
+        //마지막 내비
+        if(sPos>6162){
+            $('#m_nav>ul>li:nth-child(4)').removeClass('color_change');
 
-    $('#m_nav>ul>li:last-child').addClass('color_change');
- }else if(sPos>=7290){
-    $('#m_nav>ul>li:nth-child(4)').removeClass('color_change');
+            $('#m_nav>ul>li:last-child').addClass('color_change');
+        }else if(sPos>=7290){
+            $('#m_nav>ul>li:nth-child(4)').removeClass('color_change');
 
-    $('#m_nav>ul>li:last-child').addClass('color_change');
- }else{
-    $('#m_nav>ul>li:last-child').removeClass('color_change');
+            $('#m_nav>ul>li:last-child').addClass('color_change');
+        }else{
+            $('#m_nav>ul>li:last-child').removeClass('color_change');
 
- }
+        }
 
 
 
@@ -110,25 +110,25 @@ if(sPos>=3464){
             $('header .gnb > li>a').css('color','#fff');
         }
 
-        //호버시, 
+        //호버시,
         $('header').hover(function(){
             let sPos = $(window).scrollTop();
             if(sPos < 715){
-            $('header').addClass('act');//1. 배경색 변경
-            //2. 로고변경
-            $('header h1 img').attr('src','./images/header_logo_black.png');
-            //3. 메뉴색상 변경
-            $('header .gnb > li>a').css('color','#333');
+                $('header').addClass('act');//1. 배경색 변경
+                //2. 로고변경
+                $('header h1 img').attr('src','./images/header_logo_black.png');
+                //3. 메뉴색상 변경
+                $('header .gnb > li>a').css('color','#333');
             }
         }, function(){
             let sPos = $(window).scrollTop();
             if(sPos < 715){
-            $('header').removeClass('act');
-             //2. 로고 원래대로
-            $('header h1 img').attr('src','./images/header_logo_white.png');
-             //3. 메뉴색상, 알람아이콘 원래대로
-            $('header .gnb > li>a').css('color','#fff');
-        }
+                $('header').removeClass('act');
+                //2. 로고 원래대로
+                $('header h1 img').attr('src','./images/header_logo_white.png');
+                //3. 메뉴색상, 알람아이콘 원래대로
+                $('header .gnb > li>a').css('color','#fff');
+            }
         });
 
     });
@@ -150,15 +150,15 @@ if(sPos>=3464){
 
         $('html, body').animate({scrollTop:$('main section').eq(i).offset().top-70},400,'easeOutCubic');
 
-        
-    //main section의 인덱스번호를 찾아서
-    // -70인 이유: 헤더랑 겹치지 않기위해서
-    //오프셋 탑 -70이 될때까지 올라가라
+
+        //main section의 인덱스번호를 찾아서
+        // -70인 이유: 헤더랑 겹치지 않기위해서
+        //오프셋 탑 -70이 될때까지 올라가라
         return false;
     });
 
 
-    
+
 //고정내비게이션 제이쿼리
     let nav_c = $('#m_nav li');
     //고정 내비 클릭시 
@@ -174,14 +174,14 @@ if(sPos>=3464){
         return false;
     });
 
-        
-   
 
-   
-    
+
+
+
+
 
     //모달창 스크립트
-     //1. 모달 변수 생성하기
+    //1. 모달 변수 생성하기
     const modal = `
     <div class="modal">
         <div class="inner">
@@ -216,16 +216,16 @@ if(sPos>=3464){
             $.cookie('popup','none', {expires:1, path:'/'});//expires:1==1일
 
         }
-    
-        
-            //체크박스에 체크 안 한 경우 그냥 모달 숨기기
-        $('.modal').hide();
-    
-        }
-        //닫기 버튼을 클릭하면 closeModal 함수를 실행하여 쿠키를 생성하고 모달을 숨긴다
-        $('.modal #c_btn').click(function(){
-            closeModal();
-        });
 
-      
- });
+
+        //체크박스에 체크 안 한 경우 그냥 모달 숨기기
+        $('.modal').hide();
+
+    }
+    //닫기 버튼을 클릭하면 closeModal 함수를 실행하여 쿠키를 생성하고 모달을 숨긴다
+    $('.modal #c_btn').click(function(){
+        closeModal();
+    });
+
+
+});

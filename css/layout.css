@@ -23,7 +23,6 @@ body {position: relative;}
     position: absolute;
     top: 50%;left: 50%;
     transform: translate(-50%, -50%);
-    
 }
 .inner img{/*이미지랑 흰색박스 사이의 간격을 없애기위해 전체 마진0, 패딩0, 이미지에 블럭 줘야함*/
     display: block;
@@ -42,7 +41,6 @@ body {position: relative;}
     position: absolute;
     right: 10px;bottom: 44px;
 }
-
 
 /* 헤더 서식 */
 header{
@@ -86,12 +84,12 @@ header .gnb > li > a{
 }
 
 /* 고정 내비게이션 서식 */
-#m_nav{opacity: 0;
+#m_nav{
+    opacity: 0;
     position: fixed;
     top: 50%;transform: translateY(-50%);
-    left: 2%;
+    left: 50px;
     z-index: 999;
-    
 }
 #m_nav ul li{
     width: 10px;
@@ -103,7 +101,6 @@ header .gnb > li > a{
 }
 #m_nav ul li:hover{
     font-weight: bold;
-   
 }
 #m_nav a{
     font-size: 18px;
@@ -123,10 +120,9 @@ header .gnb > li > a{
 
 /* 푸터 서식 */
 footer{
-    padding: 10px 0px;
+    padding: 40px 0px;
     width: 100%;
     background: #000;
-    
 }
 footer>.logo{
     display: flex;
