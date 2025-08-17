@@ -51,24 +51,27 @@ header{
     left: 0;
     z-index: 1000;/*젤 위로 올라와야해서*/
     transition: 0.3s;
+
+}
+.h-wrap{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
 }
 /* 세로스크롤 값이 1000px이상일 경우 header배경색 적용 */
 .act{
     background: rgba(255, 255, 255, 0.7) !important;
 }
 
-header> h1{
-    padding: 0px 0px 0px 2%;
-}
 header img{
     width: 180px;
 }
 
-header> nav{
-    position: absolute;
+header nav{
     width: 600px;
-    margin-top: -45px;
-    right: 2%;
 }
 header .gnb{
     display: flex;
@@ -120,6 +123,7 @@ header .gnb > li > a{
 
 /* 푸터 서식 */
 footer{
+    min-width: 1200px;
     padding: 40px 0px;
     width: 100%;
     background: #000;

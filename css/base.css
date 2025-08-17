@@ -18,7 +18,7 @@ body{
     font-size: var(--t-size12);
     color: var(--t-color01);
     background: var(--bg-colo01);/*기본색이 흰색이 아닌 곳이 있을 수 있어서 따로 흰색이라고 넣어주는 것임*/
-    overflow-x:hidden;/*가로스크롤이 나오지 않게 하기*/
+    /*overflow-x:hidden;!*가로스크롤이 나오지 않게 하기*!*/
 }
 a{
     text-decoration: none;

@@ -44,22 +44,24 @@
 </head>
 <body>
     <!-- 헤더 영역 시작 -->
-    <header class="max-w min-w-1920">
-        <h1>
-            <a href="index.html" title="메인페이지 바로가기">
-                <img src="./images/header_logo_white.png" alt="메인로고">
-            </a>
-        </h1>                                                                                                       
-        <!-- 상단 내비게이션 -->
-        <nav>
-            <ul class="gnb">
-                <li><a href="#micro" title="micro">micro</a></li><!--id값이랑 똑같이 줌-->
-                <li><a href="#details" title="details">details</a></li>
-                <li><a href="#gallery" title="gallery">gallery</a></li>
-                <li><a href="#spec" title="spec">specs</a></li>
-                <li><a href="#store" title="store">store</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="h-wrap">
+            <h1>
+                <a href="index.html" title="메인페이지 바로가기">
+                    <img src="./images/header_logo_white.png" alt="메인로고">
+                </a>
+            </h1>
+            <!-- 상단 내비게이션 -->
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#micro" title="micro">micro</a></li><!--id값이랑 똑같이 줌-->
+                    <li><a href="#details" title="details">details</a></li>
+                    <li><a href="#gallery" title="gallery">gallery</a></li>
+                    <li><a href="#spec" title="spec">specs</a></li>
+                    <li><a href="#store" title="store">store</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- 고정 내비게이션 -->
     <nav id="m_nav">
@@ -72,12 +74,10 @@
         </ul>
     </nav>
 
-
-
     <!-- 메인 영역 시작 -->
     <main>
         <!-- 메인 동영상 -->
-        <section id="main_intro" class="max-w min-w-1920">
+        <section id="main_intro">
             <h2>MICRO LED</h2>
             <video autoplay muted loop>
                 <source src="./images/mainvid.webm" type="video/webm">
@@ -87,7 +87,9 @@
         </section>
 
         <!-- 메인1) micro -->
-        <section id="micro" class="max-w min-w-1920">
+        <section id="micro">
+<!--            <div class="container">-->
+
             <h2>micro</h2>
             <article class="wrap">
                 <h3>MICRO</h3>
@@ -132,10 +134,12 @@
 
 
             </article>
+<!--            </div>-->
+
         </section>
 
         <!-- 메인2) 디테일 -->
-        <section id="details" class="max-w min-w-1920">
+        <section id="details" class="">
             <h2>DETAILS</h2>
             <!-- <div class="main2_bg_c">&nbsp;</div> -->
             <div class="ss_logo">
@@ -169,7 +173,7 @@
         </section>
 
         <!-- 메인3) 갤러리 -->
-        <section id="gallery" class="max-w min-w-1920">
+        <section id="gallery" class="">
             <img src="./images/main3_simg04-3.jpg" alt="">
             <h2>GALLERY</h2>
             <article id="m_slide">
@@ -213,7 +217,7 @@
         </section>
 
         <!-- 메인4) 사양 -->
-        <section id="spec" class="max-w min-w-1920">
+        <section id="spec" class="">
             <h2>SPECS</h2>
             <table class="spec_table">
             <caption>MNA89MS1BACXKR</caption>
@@ -363,7 +367,8 @@
         </section>
 
         <!-- 메인5) 배너, 스토어 찾기 -->
-        <section id="store" class="max-w min-w-1920">
+        <section id="store">
+        <div class="container">
             <h2>STORE</h2>
             <!-- 스토어 찾기 -->
             <article class="search_store">
@@ -458,11 +463,12 @@
                     });
                 });
             </script>
+        </div>
         </section>
     </main>
 
     <!-- 푸터 영역 시작 -->
-    <footer class="max-w min-w-1920">
+    <footer class="">
         <div class="logo">
             <h2><a href="index.html" title="메인 바로가기"><img src="./images/footer_logo.png" alt="하단 로고"></a></h2>
             <ul class="sns">
