@@ -48,8 +48,8 @@ section{
 }
 
 #gallery, #spec{
-    margin: 0px auto;
-    width: 1200px;
+    /*margin: 0px auto;*/
+    /*width: 1200px;*/
 }
 #micro::before{
     content: '';
@@ -497,7 +497,7 @@ section>h2{
 
 #store{
     width: 100%;
-    margin:0px auto;
+    /*margin:0px auto;*/
     background: linear-gradient(to bottom, #5A2F43 , #0D1A2B 40%, #171717);
 }
 #store>h2{

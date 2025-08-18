@@ -123,10 +123,11 @@ header .gnb > li > a{
 
 /* 푸터 서식 */
 footer{
-    min-width: 1200px;
+    min-width: 1600px;
     padding: 40px 0px;
     width: 100%;
     background: #000;
+    max-width: 2560px;
 }
 footer>.logo{
     display: flex;
